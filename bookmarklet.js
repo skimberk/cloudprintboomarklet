@@ -4,7 +4,7 @@
 		jQuery.getScript('https://raw.github.com/skimberk1/cloudprintboomarklet/master/bookmarklet-run.js');
 	};
 	var s=document.createElement('script');
-	s.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js');
+	s.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js?' + new Date().getTime(););
 	if(typeof jQuery == 'undefined'){
 		document.getElementsByTagName('head')[0].appendChild(s);
 		repeaty = setInterval(function(){
